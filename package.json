@@ -1,0 +1,38 @@
+{
+  "name": "node-recommend",
+  "description": "A Recommendation Engine for Node.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "Taeho Kim",
+    "email": "xissysnd@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Taeho Kim",
+      "email": "xissysnd@gmail.com"
+    }
+  ],
+  "keywords": [
+    "recommendation",
+    "recommendation engine",
+    "collaborative filter",
+    "node",
+    "node.js"
+  ],
+  "main": "index.js",
+  "bugs": {
+    "email": "xissysnd@gmail.com",
+    "url": "https://github.com/xissy/node-recommend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xissy/node-recommend.git"
+  },
+  "dependencies": {
+    
+  },
+  "engines": {
+    "node": ">= 0.6.1"
+  },
+  "license": "MIT",
+}
