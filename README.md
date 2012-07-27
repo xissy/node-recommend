@@ -23,7 +23,7 @@ As a submodule of your project (you will also need to install)
 ## Usage
 ### Load in the module
 
-	var apns = require('recommend');
+	var recommed = require('recommend');
   
 ### Watch test sample source code
   
