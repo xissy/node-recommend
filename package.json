@@ -2,7 +2,7 @@
   "author": "Taeho Kim <xissysnd@gmail.com>",
   "name": "recommend",
   "description": "A Recommendation Engine for Node.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "url": "https://github.com/xissy/node-recommend.git"
   },
@@ -32,5 +32,5 @@
     "collaborative",
     "filter"
   ],
-  "license": "MIT"
+  "license": "BSD"
 }
