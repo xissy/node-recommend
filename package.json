@@ -7,7 +7,9 @@
     "url": "https://github.com/xissy/node-recommend.git"
   },
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "async": ">= 0.1.22"
+  },
   "devDependencies": {
     "should": ">= 1.0.0",
     "mocha": ">= 1.3.0"

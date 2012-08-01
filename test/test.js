@@ -30,6 +30,8 @@ describe('Recommend', function() {
 		key2 = getRandomKey(dataSet);
 
 		should.exist(recommend);
+		should.exist(recommend.dataSet);
+		should.exist(recommend.reversedDataSet);
 		should.exist(key);
 		should.exist(key1);
 		should.exist(key2);
@@ -57,20 +59,38 @@ describe('Recommend', function() {
 
 	describe('recommend', function() {
 		it('#getTopMatches()', function(done) {
-			var result = recommend.getTopMatches(key);
-			should.exist(result);
-			// console.log( 'Recommend.getTopMatches(' + key + ') === ' + JSON.stringify(result) );
+			recommend.getTopMatches(key, function(err, topMatches) {
+				should.not.exist(err);
+				should.exist(topMatches);
 
-			done();
+				done();
+			});
 		});
 
 		it('#getRecommendations()', function(done) {
-			var result = recommend.getRecommendations(key);
+			recommend.getRecommendations(key, function(err, recommendations) {
+				should.not.exist(err);
+				should.exist(recommendations);
+
+				done();
+			});
+		});
+
+		it('#transformPrefs()', function(done) {
+			var result = recommend.transformPrefs();
 			should.exist(result);
-			// console.log( 'Recommend.getRecommendations(' + key + ') === ' + JSON.stringify(result) );
 
 			done();
 		});
+
+		it('#calculateSimilarItems()', function(done) {
+			recommend.calculateSimilarItems( function(err, similarItems) {
+				should.not.exist(err);
+				should.exist(similarItems);
+
+				done();
+			});
+		})
 	});
 
 });
