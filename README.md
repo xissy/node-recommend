@@ -13,7 +13,7 @@ A Node.js module to implement a recommender engine with popular machine-learning
 
 Via npm:
 
-  $ npm install recommend
+	$ npm install recommend
 	
 As a submodule of your project (you will also need to install)
 
