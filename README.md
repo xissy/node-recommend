@@ -29,7 +29,7 @@ As a submodule of your project (you will also need to install)
   
 ## Changelog
 
-0.0.2:
+0.0.3:
 
 * Some getting similarity and collarborative filter functions.
 
